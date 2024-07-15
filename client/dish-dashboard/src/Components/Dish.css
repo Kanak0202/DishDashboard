@@ -1,0 +1,125 @@
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.dish-container {
+    display: flex;
+    height: 25vh;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dish-left-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.dish-image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.dish-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dish-text-container {
+    flex: 2;
+    padding-left: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dish-text-container p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.dish-text-container p span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.published {
+    background-color: rgba(12, 133, 12, 0.114); 
+    transition: background-color 0.2s ease-in-out;
+}
+
+.unpublished {
+    background-color: rgba(181, 5, 5, 0.1);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dish-name{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 3em !important;
+}
+
+.btn{
+    background-color: #3f8e1d;
+    color: white;
+    border: none;
+    height: 18%;
+    width: 20%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+    background-color: #2f6a16;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+    .dish-container {
+        flex-direction: column;
+        height: 50vh !important; 
+    }
+
+    .dish-left-container {
+        width: 100%;
+        height: 50%;
+    }
+
+    .dish-text-container {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 10px;
+        height:50%;
+    }
+
+    .dish-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .btn{
+        height: 20%;
+    }
+}
