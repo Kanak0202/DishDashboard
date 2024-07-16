@@ -2,7 +2,7 @@
 cd server
 npm start
 
-#Run Client
+# Run Client
 cd client
 cd dish-dashboard
 npm start
