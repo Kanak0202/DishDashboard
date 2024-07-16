@@ -1,8 +1,8 @@
 # Run Server
-cd server
-npm start
+cd server  
+npm start  
 
 # Run Client
-cd client
-cd dish-dashboard
-npm start
+cd client  
+cd dish-dashboard  
+npm start  
