@@ -80,7 +80,7 @@
     background-color: #3f8e1d;
     color: white;
     border: none;
-    height: 18%;
+    height: 20%;
     width: 20%;
     border-radius: 8px;
     cursor: pointer;
@@ -120,6 +120,6 @@
     }
 
     .btn{
-        height: 20%;
+        height: 25%;
     }
 }

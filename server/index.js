@@ -25,7 +25,9 @@ app.use(cors());
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Pass the io instance to routes
+// seedDatabase();
+
+//middleware
 app.use((req, res, next) => {
     req.io = io;
     next();
@@ -40,7 +42,6 @@ dbConnect();
 
 io.on('connection', (socket) => {
     console.log('A user connected');
-    // Handle events here
     socket.on('disconnect', () => {
         console.log('A user disconnected');
     });
